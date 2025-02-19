@@ -12,13 +12,19 @@ Un composant Livewire pour gérer les réservations en temps réel
 Une interface moderne avec Blade et TailwindCSS
 
 2️⃣ Prérequis
+
 Avant d’installer le projet, assurez-vous d’avoir :
 
 PHP >= 8.1
+
 Composer (Gestionnaire de dépendances PHP)
+
 Node.js >= 16 et NPM
+
 Git pour cloner le dépôt
+
 MySQL ou SQLite comme base de données
+
 Laravel Installer (optionnel)
 
 3️⃣ Installation du projet
@@ -26,18 +32,21 @@ Laravel Installer (optionnel)
 📥 1. Cloner le projet
 
 git clone https://github.com/TraoreAminata99/gestion_immobilier.git
+
 cd gestion_immobilier
 
 ⚙ 2. Installer les dépendances
 
-Copier
-Modifier
 composer install
+
 npm install
+
 🔧 3. Configurer l’environnement
+
 Renommez le fichier .env.example en .env
 
 cp .env.example .env
+
 Modifiez le fichier .env avec vos paramètres de base de données :
 
 DB_CONNECTION=mysql
@@ -49,80 +58,61 @@ DB_PASSWORD=
 
 🛠 4. Générer la clé d’application
 
-
-Copier
-Modifier
 php artisan key:generate
 
 🗄 5. Exécuter les migrations et les seeders
 
-Copier
-Modifier
 php artisan migrate --seed
+
 Cela créera les tables et insérera des données d’exemple.
 
 🚀 6. Lancer le serveur de développement
 
-Copier
-Modifier
 php artisan serve
+
 L’application sera accessible via http://127.0.0.1:8000
 
 4️⃣ Fonctionnalités principales
 
 ✅ Authentification Laravel Breeze
+
 Inscription et connexion sécurisées
+
 Protection des routes avec middleware auth
 
 ✅ Gestion des propriétés et réservations
+
 CRUD (Créer, Lire, Modifier, Supprimer) des propriétés
+
 Réservation en temps réel avec Livewire
 
 ✅ Panneau d’administration avec Filament
-Accessible via :
 
-arduino
-Copier
-Modifier
-http://127.0.0.1:8000/admin
+Accessible via : http://127.0.0.1:8000/admin
+
 📌 Identifiants par défaut :
 
 Email : admin@example.com
+
 Mot de passe : password
-5️⃣ Déploiement
-Si vous souhaitez héberger le projet en ligne :
-
-📌 1. Mettre à jour les permissions
-
-
-Copier
-Modifier
-chmod -R 775 storage bootstrap/cache
 
 📌 2. Générer les assets en production
 
-
-Copier
-Modifier
 npm run build
 
 📌 3. Configurer un stockage pour les images
 
-Si vous utilisez un serveur distant, exécutez :
-
-
-Copier
-Modifier
 php artisan storage:link
+
 Cela permettra d’accéder aux images stockées.
 
-6️⃣ Captures d’écran
-📸 Ajoutez ici des images de l’interface utilisateur et du panneau Filament.
 
 7️⃣ Support et contact
+
 Si vous avez des questions ou rencontrez des problèmes, contactez-moi :
 
 📧 Email : aminata06traore@gmail.com
+
 📞 Téléphone : +33 7 58 56 92 66
 
 💡 Merci d’avoir utilisé cette application ! 😊 🚀
