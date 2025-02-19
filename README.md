@@ -50,10 +50,15 @@ cp .env.example .env
 Modifiez le fichier .env avec vos paramètres de base de données :
 
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
+
 DB_DATABASE=nom_de_la_bdd
+
 DB_USERNAME=root
+
 DB_PASSWORD=
 
 🛠 4. Générer la clé d’application
