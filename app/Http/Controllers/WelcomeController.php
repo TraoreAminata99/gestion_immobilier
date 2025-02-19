@@ -10,7 +10,7 @@ class WelcomeController extends Controller
     //
     public function index()
     {   
-        $property = Property::All();
+        $property = Property::latest()->take(6)->get();
         return view('welcome',compact('property'));
     }
 }
