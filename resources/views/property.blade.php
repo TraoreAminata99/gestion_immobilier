@@ -7,7 +7,7 @@
         <div class="container">
             <div class="box-title-listing">
                 <div class="box-left">
-                    <h3 class="fw-8" style="font-size: 40px; color: #1563df">Property Listing</h3>
+                    <h3 class="fw-8" style="font-size: 40px; color: #1563df">Liste des propriétés</h3>
                 </div>
             </div>
             <div class="flat-animate-tab">
