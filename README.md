@@ -4,8 +4,11 @@
 Ce projet est une application web développée avec Laravel, permettant la gestion des propriétés et des réservations. Il inclut :
 
 Une authentification sécurisée avec Laravel Breeze
+
 Un panneau d’administration basé sur Filament
+
 Un composant Livewire pour gérer les réservations en temps réel
+
 Une interface moderne avec Blade et TailwindCSS
 
 2️⃣ Prérequis
