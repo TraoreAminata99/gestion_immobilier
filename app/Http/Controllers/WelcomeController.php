@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Property;
 
 class WelcomeController extends Controller
 {
     //
     public function index()
     {   
-        return view('welcome');
+        $property = Property::All();
+        return view('welcome',compact('property'));
     }
 }

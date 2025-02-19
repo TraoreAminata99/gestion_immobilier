@@ -50,7 +50,9 @@ class PropertyResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
-                Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\ImageColumn::make('image')
+                    ->url(fn ($record) => 'storage/' . $record->image)
+                    ->size(100), 
                 Tables\Columns\TextColumn::make('price_per_night')
                     ->numeric()
                     ->sortable(),

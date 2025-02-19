@@ -12,12 +12,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
    <!-- font -->
-   <link rel="stylesheet" href="fonts/fonts.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
    <!-- Icons -->
    <link rel="stylesheet" href="fonts/font-icons.css">
-   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="css/jqueryui.min.css"/>
-   <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+   <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}"/>
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/favicon.png">
