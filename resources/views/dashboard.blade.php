@@ -19,11 +19,10 @@
                         <span class="icon icon-listing"></span>
                     </div>
                     <div class="content-box">
-                        <div class="title-count text-variant-1">Your listing</div>
+                        <div class="title-count text-variant-1">Accepter</div>
                         <div class="box-count d-flex align-items-end">
                             <!-- <h3 class="number fw-8" data-speed="2000" data-to="17" data-inviewport="yes">32</h3>       -->
-                            <h3 class="fw-8">32</h3>                                   
-                            <span class="text">/50 remaining</span>
+                            <h3 class="fw-8">{{ $acceptedCount }}</h3>                                   
                         </div>                              
 
                     </div>
@@ -33,9 +32,9 @@
                         <span class="icon icon-pending"></span>
                     </div>
                     <div class="content-box">
-                        <div class="title-count text-variant-1">Pending</div>
+                        <div class="title-count text-variant-1">Refuser</div>
                         <div class="box-count d-flex align-items-end">
-                            <h3 class="fw-8">02</h3>                                   
+                            <h3 class="fw-8">{{ $bookings->count() }}</h3>                                   
                         </div>                              
                     </div>
                 </div>
@@ -44,29 +43,17 @@
                         <span class="icon icon-favorite"></span>
                     </div>
                     <div class="content-box">
-                        <div class="title-count text-variant-1">Favorites</div>
+                        <div class="title-count text-variant-1">Attente</div>
                         <div class="d-flex align-items-end">
                             <!-- <h6 class="number" data-speed="2000" data-to="1" data-inviewport="yes">1</h6>  -->
-                            <h3 class="fw-8">06</h3>                                   
-                        </div>                              
-
-                    </div>
-                </div>
-                <div class="counter-box">
-                    <div class="box-icon">
-                        <span class="icon icon-review"></span>
-                    </div>
-                    <div class="content-box">
-                        <div class="title-count text-variant-1">Reviews</div>
-                        <div class="d-flex align-items-end">
-                            <h3 class="fw-8">1.483</h3>                                   
+                            <h3 class="fw-8">{{ $pendingCount }}</h3>                                   
                         </div>                              
 
                     </div>
                 </div>
             </div>
             <div class="wrapper-content row">
-                <div class="col-xl-9">
+                <div class="col-xl-12">
                     <div class="widget-box-2 wd-listing">
                         <div class="wrap-table">
                             <div class="table-responsive">
@@ -92,7 +79,7 @@
                                                         <div class="text-date">{{ $booking->property->address }}</div>
                                                         <div class="text-date"> {{ \Carbon\Carbon::parse($booking->start_date)->translatedFormat('d F Y') }} - 
                                                             {{ \Carbon\Carbon::parse($booking->end_date)->translatedFormat('d F Y') }}</div>
-                                                        <div class="text-btn text-primary">{{ number_format($booking->property->price_per_night) }}</div> 
+                                                        <div class="text-btn text-primary">{{ number_format($booking->property->price_per_night) }}$</div> 
                                                     </div>
                                                 </div>
                                             </td>

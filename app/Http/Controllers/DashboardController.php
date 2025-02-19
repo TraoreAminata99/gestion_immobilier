@@ -16,7 +16,11 @@ class DashboardController extends Controller
                     ->with('property') // Charger les détails du bien
                     ->get();
 
-        return view('dashboard', compact('bookings'));
+        $pendingCount = $bookings->where('status', 'pending')->count();
+        $acceptedCount = $bookings->where('status', 'accepted')->count();
+        $rejectedCount = $bookings->where('status', 'rejected')->count();
+
+        return view('dashboard', compact('bookings','pendingCount', 'acceptedCount', 'rejectedCount'));
     }
 
     public function cancel(Booking $booking)
@@ -59,6 +63,7 @@ class DashboardController extends Controller
         $booking->update([
             'start_date' => $request->start_date,
             'end_date' => $request->end_date,
+            'status' => 'pending', //mise ajout du status
         ]);
 
         return redirect()->route('dashboard')->with('success', 'Réservation mise à jour avec succès.');

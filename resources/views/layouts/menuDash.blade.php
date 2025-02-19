@@ -4,12 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
-    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
-    <meta name="description" content="Real Estate HTML Template">
-
-    <meta name="author" content="themesflat.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Gestion immobilière</title>
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap,php,Laravel">
+    <meta name="description" content="gestion immobilier">
+    <meta name="author" content="Traore Aminata">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
 
    <!-- font -->
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
@@ -18,10 +17,6 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="css/jqueryui.min.css"/>
    <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}"/>
-
-    <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="images/logo/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png">
 
 </head>
 

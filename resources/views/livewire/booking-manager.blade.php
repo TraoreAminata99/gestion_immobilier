@@ -9,7 +9,7 @@
         <div class="container">
             <div class="box-title-listing">
                 <div class="box-left">
-                    <h3 class="fw-8">Property Listing</h3>
+                    <h2 class="fw-8" style="font-size: 40px; color: #1563df">Liste des propriétés</h2>
                 </div>
             </div>
             <div class="flat-animate-tab">
@@ -50,7 +50,7 @@
                                             </div>
                                             
                                             <div class="content-bottom">
-                                                <h6 class="price">{{ $property_form->price_per_night }}</h6>
+                                                <h6 class="price">{{ $property_form->price_per_night }}$</h6>
                                             </div>
                                         </div>
                                         

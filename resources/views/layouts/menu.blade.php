@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Gestion immobilière</title>
-        <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
-        <meta name="description" content="Real Estate HTML Template">
-        <meta name="author" content="themesflat.com">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap,php,Laravel">
+        <meta name="description" content="gestion immobilier">
+        <meta name="author" content="Traore Aminata">
         <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
     
        <!-- font -->
@@ -26,10 +26,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
         <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}"/>
-    
-        <!-- Favicon and Touch Icons  -->
-        <link rel="shortcut icon" href="images/logo/favicon.png">
-        <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png">
     
     </head>
     <body class="body">
@@ -55,7 +51,11 @@
                                 <div class="inner-header">
                                     <div class="inner-header-left">
                                         <div class="logo-box flex">
-                                            <div class="logo"><a href="{{ route('welcome') }}"><img src="images/logo/logo@2x.png" alt="logo" width="166" height="48"></a></div>
+                                            <div class="logo">
+                                                <a href="{{ route('welcome') }}">
+                                                    <h4 style="color: #1563df"> <div class="fi-logo flex text-xl font-bold leading-5 tracking-tight text-gray-950 dark:text-white">Gestion immobilière</div></h4>
+                                                </a>
+                                            </div>
                                         </div>
                                         <div class="nav-outer flex align-center">
                                             <!-- Main Menu -->
@@ -63,7 +63,6 @@
                                                 <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                                     <ul class="navigation clearfix">
                                                         <li><a href="{{ route('welcome') }}"></a></li>
-                                                        {{-- <li><a href="{{ route('mypropertie.index') }}">My Properties</a></li> --}}
                                                     </ul>
                                                 </div>
                                             </nav>
@@ -136,15 +135,7 @@
                     <div class="bottom-footer">
                         <div class="container">
                         <div class="content-footer-bottom">
-                            <div class="copyright">©2024 Homelengo. All Rights Reserved.</div>
-                                
-                            <ul class="menu-bottom">
-                                <li><a href="our-service.html">Terms Of Services</a> </li>
-
-                                <li><a href="pricing.html">Privacy Policy</a> </li>
-                                <li><a href="contact.html">Cookie Policy</a> </li>
-
-                            </ul>
+                            <div class="copyright">©2025 AmyT | Tous droits réservés.</div>
                         </div>
                         </div>
                     </div>

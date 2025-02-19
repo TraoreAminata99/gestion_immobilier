@@ -12,13 +12,6 @@ Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
 Route::resource('/mypropertie', PropertieController::class);
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
-
-// Route::get('/reservation', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('reservation');
 
 //route utilisateur
 Route::middleware('auth')->group(function () {
@@ -30,8 +23,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/booking/{booking}/edit', [DashboardController::class, 'edit'])->name('booking.edit');
     Route::patch('/booking/{booking}', [DashboardController::class, 'update'])->name('booking.update');
     
-
-
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

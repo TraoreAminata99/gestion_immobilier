@@ -11,18 +11,18 @@
                 <div class="slider-content">
                     <div class="heading text-center">
                         <h1 class="title-large text-white animationtext slide">
-                            Find Your
+                            Trouvez votre
                             <span class="tf-text s1 cd-words-wrapper"> 
-                                <span class="item-text is-visible">Dream Home</span>
-                                <span class="item-text is-hidden">Perfect Home</span>
+                                <span class="item-text is-visible">Maison de rêve</span>
+                                <span class="item-text is-hidden">Maison parfaite</span>
                             </span>  
                         </h1>
-                        <p class="subtitle text-white body-2 wow fadeInUp" data-wow-delay=".2s">We are a real estate agency that will help you find the best residence you dream of, let’s discuss for your dream house?</p>
+                        <p class="subtitle text-white body-2 wow fadeInUp" data-wow-delay=".2s">Nous sommes une agence immobilière qui vous aidera à trouver la meilleure résidence dont vous rêvez, discutons de la maison de vos rêves ?</p>
                     </div>
                     <div class="flat-tab flat-tab-form">
                         <ul class="nav-tab-form style-1 justify-content-center" role="tablist">
                             <li class="nav-tab-item" role="presentation">   
-                                <a href="{{ route('login') }}" class="nav-link-item active"  data-bs-toggle="tab">Reservation</a>
+                                <a href="{{ route('reserver') }}" class="nav-link-item active" >Reservation</a>
                             </li>
                         </ul>
                     </div>
@@ -38,8 +38,8 @@
 <section class="flat-section flat-recommended">
     <div class="container">
         <div class="box-title text-center wow fadeInUp">
-            <div class="text-subtitle text-primary">Featured Properties</div>
-            <h3 class="mt-4 title">Recommended For You</h3>
+            <div class="text-subtitle text-primary">Propriétés en vedette</div>
+            <h3 class="mt-4 title">Recommandé pour vous</h3>
         </div>
         <div class="flat-tab-recommended" >
             <div class="tab-content">
@@ -56,7 +56,6 @@
                                             <div class="top">
                                                 <ul class="d-flex gap-6">
                                                     <li class="flag-tag primary">Reserver</li>
-                                                    
                                                 </ul>
                                                 
                                             </div>
@@ -72,7 +71,7 @@
                                     </div>
                                     <div class="archive-bottom">
                                         <div class="content-top">
-                                            <h6 class="text-capitalize"><a href="{{ route('welcome') }}" class="link"> {{ $property_form->name }}</a></h6>
+                                            <h6 class="text-capitalize"><a href="{{ route('reserver') }}" class="link"> {{ $property_form->name }}</a></h6>
                                                 <ul class="meta-list">
                                                     <li class="item">
                                                         <span class="text-variant-1">{{ $property_form->description }}.</span>
@@ -83,7 +82,7 @@
                                         
                                         <div class="content-bottom">
 
-                                            <h6 class="price">{{ $property_form->price_per_night }}</h6>
+                                            <h6 class="price">{{ $property_form->price_per_night }}$</h6>
                                         </div>
                                     </div>
                                 </div>

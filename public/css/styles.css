@@ -8792,7 +8792,7 @@ label {
 }
 .layout-wrap .flat-counter-v2 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-bottom: 20px;
 }
@@ -8924,7 +8924,7 @@ label {
   height: 23px;
   font-weight: 800;
   color: #ffffff;
-  background-color: #25c55b;
+  /* background-color: #25c55b; */
   text-align: center;
 }
 .layout-wrap .wrap-table .status-wrap .btn-status.pending {
